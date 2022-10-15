@@ -1,0 +1,31 @@
+program bintang_piramida;
+
+{$APPTYPE CONSOLE}
+
+uses 
+crt;
+
+var
+  baris,a,b,c: ShortInt; // variable baris, a, b, dan c menggunakan shorint
+
+begin
+  clrscr;
+  write('Input jumlah baris : '); // menampilalkan Input jumlah baris : 
+  readln(baris); // membaca variable baris
+  writeln;  // menampilkan baris kosong agar tidak terlalu rapat
+ 
+  for a := 1 to baris do // memasukan perulangan/loop for pada variable a dan memberi nilai 1 untuk membuat bintang berbentuk piramida
+  begin // memulai program for yang telah diinput
+    for b := 1 to baris-a do // memasukan perulangan/loop for pada variable b untuk membuat spasi agar bintang bergeser ke kanan
+    begin // memulai program for yang telah diinput
+      write(' '); // menampilkan spasi
+    end; // program for berakhir
+    for c := 1 to a do // memasukan perulangan/loop for pada variable c dengan nilai 1 to variable a do agar bintanng yang ditampilkan naik dari  c := 1 sampe i
+    begin // memulai program for yang telah diinput
+      write(' *'); // menampilkan * dengan spasi diawal yang bertujuan agar piramida berbentuk sempurna
+    end; // program for berakhir
+  writeln; // memindahkan baris 
+  end; 
+ 
+  readln;
+end.
