@@ -1,0 +1,28 @@
+program diskon;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils,
+  crt;
+
+var
+  harga, diskon, total: Real;
+
+begin
+clrscr;
+  write('masukan harga: ');
+  Readln(harga);
+
+  if harga > 100000 then
+  begin
+    diskon := harga*(15/100);
+    total := harga-diskon;
+    writeln('harga diskon: ', diskon:0:0);
+    write('nilai belanja setelah diskon: ', total:0:0);
+  end
+  else
+  begin
+    write('eweuh diskon bgst'); //maaf kasar ya ges ya
+  end;
+end.
