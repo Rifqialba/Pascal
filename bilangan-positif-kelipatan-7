@@ -1,0 +1,26 @@
+program kelipatan_7;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils,
+  crt;
+
+var
+  a : integer;
+
+begin
+  clrscr;
+  write('input bilangan : '); 
+  readln(a); // masukan varable a
+  if a 
+  mod 7=0 then // masukan if else dengan modulus, jika sisa bagi 7 maka itu merupakan bilangan kelipatan 7
+  begin // memulai program if else
+    write('ini adalah bilangan kelipatan 7'); // output / hasil yang akan ditampilan jika bilangan kelipatan 7
+  end
+  else
+  begin // memulai program  else
+    write('ini bukan bilangan kelipatan 7'); // output / hasil yang akan ditampilkan jika bukan kelipatan 7
+  end; // mengakhiri program if else
+ReadKey;
+end.
