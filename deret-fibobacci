@@ -1,0 +1,31 @@
+program no2;
+
+{$APPTYPE CONSOLE}
+
+uses 
+crt;
+
+var a, b, c, d, f : integer; // memasukan variabel a sampai f dengan integer
+
+begin
+textbackground(blue); // mengganti background teks dengan warna hijau
+textcolor(white); // mengganti warna teks dengan warna putih
+clrscr; // untuk membersihkan layar agar saat input dan output terlihat rapih 
+
+
+write('Masukkan Jumlah Deret : '); // menampilkan Masukkan Jumlah Deret :
+readln(a); //membaca variabel a
+write('Deret Fibonacci',' ', a,' : ( '); // menampilan deret fibonacci dengan jumlah deret yang diambil dari input d := 0; // memasukan value variabel d dengan 0
+f := 1; // memasukan value variabel f dengan 1
+c := 0; // memasukan value variabel c dengan 0
+for b := 1 to a do // memasukan loop dan mengisi variabel b dengan 1 sampai variabel a
+begin // memulai program
+c := d + c; // memberi operasi aritmatika pada variabel c dengan isi variabel d + c
+d :=f; // memberi nilai pada variabel b dengan value f
+f :=c; // memberi nilai pada variabel f dengan value c
+write(c); // menulis pada baris yang sama dengan menarik variabel c
+write(' '); // memberi spasi
+end; // akhir program
+WriteLn(')'); // memberi tanda kurung tutup
+readln;
+end.
