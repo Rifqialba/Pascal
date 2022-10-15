@@ -1,0 +1,37 @@
+program no3;
+
+{$APPTYPE CONSOLE}
+
+uses 
+SysUtils,
+crt;
+
+var
+
+nama : string ; // memasukan variabel nama dengan tipe data stirng
+a, b, c, d, e: Integer ; // memasukan variabel a sampai e dengan tipe data integer
+
+begin // memulai program
+
+textbackground(blue); // mengganti background teks dengan warna hijau
+textcolor(white); // mengganti warna teks dengan warna putih
+clrscr; // untuk membersihkan layar agar saat input dan output terlihat rapih 
+
+Write('jumlah mahasiswa : ');
+Readln(a); //membaca variabel a
+writeln('🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍 '); 
+for b:= 1 to a do // memasukan loop for pada variabel b dengan value b:=1 sampai banyaknya input oleh user 
+begin // program baru dimulai
+Write('Nama Mahasiswa ke-',b,': ');//menampilkan nama mahasiswa ke b 
+Readln(nama); // membaca variabel nama
+Write('Jumlah Mata Kuliah : ') ;// menampilkan jumlah matakuliah 
+Readln(c); //membaca variabel c
+Write('Nilai Mata Kuliah ke-1 : ') ;//menampilkan nilai matkul 1 
+Readln(d); // membaca variabel d
+Write('Nilai Mata Kuliah ke-2 : ') ; // menampilkan nilai matkul 2 
+Readln(e); // membaca variabel e
+Writeln; // menampilkan baris baru end; //program selesai
+end;
+
+ReadKey;
+end.  //program selesai
