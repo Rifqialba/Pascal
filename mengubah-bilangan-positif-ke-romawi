@@ -1,0 +1,32 @@
+program romawi;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils,
+  crt;
+
+var
+  number:Integer;
+
+begin
+  ClrScr;
+  write('Input Number 15-25 : ');
+  readln(number);
+
+  case (number) of
+  15: Writeln('XV');
+  16: Writeln('XVI');
+  17: Writeln('XVII');
+  18: Writeln('XVIII');
+  19: Writeln('XIX');
+  20: Writeln('XX');
+  21: Writeln('XXI');
+  22: Writeln('XXII');
+  23: Writeln('XXIII');
+  24: Writeln('XXVI');
+  25: Writeln('XXV');
+  else writeln('Angka Tidak Terdeteksi');
+end;
+readln;
+end.
