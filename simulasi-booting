@@ -1,0 +1,64 @@
+Program SO_T3;
+
+    {$APPTYPE CONSOLE}
+uses
+  crt;
+
+var
+    o : LongInt;
+    t : integer;
+
+begin
+  textbackground(cyan);
+  clrscr;
+  t:=650;
+
+  textcolor(white);
+  delay (t);
+  writeln('                      POWER SUPPLY CHECKING                  ') ;
+  delay (t);
+  writeln('Power Supply','.........................................','OK');
+  delay (t);
+  writeln('                      MICROPROCESSOR ACTIVED                 ') ;
+  delay (t);
+  Writeln('Prosesor Intel® Celeron® N4000 [ACTIVED]');
+  delay (t);
+  textcolor(white);
+  writeln ('                  HARDWARE AND SYSTEM CHECKING           ');
+  delay (t);
+  writeln('H310M-DS2BIOS VER F60');
+  delay (t);
+  Writeln('Memory : DDR4 3200 MHz in dual channel...............','OK');
+  delay (t);
+  writeln('Detected GPU.........................................','OK') ;
+  delay (t);
+  writeln('Radeon RX 5000 atau RX 6000..........................','OK') ;
+  delay (t);
+  writeln ('Detected SSD/HDD.....................................','OK') ;
+  delay (t);
+  writeln('1. NVMe M.2 DC1000B..................................','OK') ;
+  delay (t);
+  writeln('2. Transcend StoreJet 25C3S..........................','OK') ;
+  delay (t);
+  writeln('                         MEMORY CHECKING                        ') ;
+begin
+  gotoxy(1,16);
+  writeln('Memory testing     : ',o );
+end;
+for o:= 0 to 3000000 do
+begin
+  gotoxy(21,16);
+  writeln(o,'K');
+                                           
+end;
+  delay (t);
+  WriteLn('Install Memory Size:3000000') ;
+  delay (t);
+  writeln('                      SELECTING BOOT SECTOR                    ') ;
+  delay (t);
+  writeln('Auto Detecting NVMe M.2 DC1000B') ;
+  delay (t);
+  textcolor(white);
+  Writeln('                       BOOTING SUCCESSFUL            ') ;
+  readkey;
+end. 
